@@ -1,5 +1,3 @@
-import Title from "../Grid/Title";
-
 const BoxL = () => {
   return (
     <div className="container">
