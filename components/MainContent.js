@@ -3,7 +3,7 @@ import Link from 'next/link'
 function MainContent() {
   return (
     <div className="container">
-      <div className="name">Cindy Duong</div>
+      <div className="name"> <Link href="/"><a>Cindy Duong</a></Link></div>
 
       <div className="navigations">
         <ul>
@@ -24,7 +24,7 @@ function MainContent() {
       </div>
       <style jsx>{`
         .container {
-          margin-bottom: 15rem;
+          margin-bottom: 20rem;
         }
         .name {
           font-size: 30px;
@@ -43,6 +43,7 @@ function MainContent() {
           align-items: center;
           margin: auto;
           max-width: 850px;
+          margin-top: 0px;
         }
         .text {
           padding-left: 2rem;
