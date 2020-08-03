@@ -1,5 +1,9 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import MainContent from "../components/MainContent";
+import BoxL from "../components/Grid/BoxL";
+import BoxM from "../components/Grid/BoxM";
+import Title from "../components/Grid/Title";
 
 export default function Home() {
   return (
@@ -9,13 +13,22 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <main>
+        <MainContent />
+        <div className="resume">
+          <Title title="Education 📚"> </Title>
+          <BoxL></BoxL>
+          <Title title="Experiences ✨"></Title>
+          <BoxM></BoxM>
+          <Title title="Skills 🖋️"></Title>
+        </div>
+
+        <div className="container">
+          <div className="col"></div>
+        </div>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          Get started by editing{" "}
           <code className={styles.code}>pages/index.js</code>
         </p>
 
@@ -56,10 +69,16 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
+      <style jsx>{`
+        .resume {
+          margin-left:auto;
+          margin-right:auto;
+          max-width:1280px;
+      `}</style>
     </div>
-  )
+  );
 }
