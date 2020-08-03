@@ -1,19 +1,21 @@
-const MainContent = () => {
+import Link from 'next/link'
+
+function MainContent() {
   return (
     <div className="container">
       <div className="name">Cindy Duong</div>
 
       <div className="navigations">
         <ul>
-          <li>About</li>
-          <li>Code</li>
+          <li><Link href="/"><a>About</a></Link></li>
+          <li><Link href="/code"><a>Code</a></Link></li>
         </ul>
       </div>
 
       <div className="main-content">
         <img src="profile.jpg"></img>
         <div className="text">
-          <div className="intro">Hey there! <a>I’m Cindy.</a></div>
+          <div className="intro">Hey there! <span>I’m Cindy.</span></div>
           <div className="bio">
             I’m a senior at Claremont McKenna College who enjoys leveraging code
             + design to build human-centric technology.{" "}
@@ -53,7 +55,7 @@ const MainContent = () => {
           line-height: 54px;
           letter-spacing: 0.02em;
         }
-        a {
+        span {
           color: #FFB951;
         }
       `}</style>

@@ -5,6 +5,7 @@ import BoxL from "../components/Grid/BoxL";
 import BoxM from "../components/Grid/BoxM";
 import BoxS from "../components/Grid/BoxS";
 import Title from "../components/Grid/Title";
+import Button from "../components/Button/Button";
 
 export default function Home() {
   return (
@@ -24,6 +25,11 @@ export default function Home() {
           <Title title="Skills 🖋️"></Title>
           <BoxS></BoxS>
         </div>
+        <div className="ending">
+          Thanks for stopping by! I look forward to connecting. <br></br>
+          <div className="subtitle">Feel free to check out my resume.</div>
+        </div>
+        <Button title="Resume"></Button>
       </main>
 
       <footer className={styles.footer}>
@@ -41,6 +47,12 @@ export default function Home() {
           margin-left: auto;
           margin-right: auto;
           max-width: 1280px;
+        }
+        .subtitle {
+          font-size: 12px;
+        }
+        .ending {
+          text-align: center;
         }
       `}</style>
     </div>
