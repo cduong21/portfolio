@@ -6,6 +6,7 @@ import BoxM from "../components/Grid/BoxM";
 import BoxS from "../components/Grid/BoxS";
 import Title from "../components/Grid/Title";
 import Button from "../components/Button/Button";
+import HeaderNav from "../components/Navigation/HeaderNav"
 
 export default function Home() {
   return (
@@ -16,7 +17,11 @@ export default function Home() {
       </Head>
 
       <main>
+        <div className="main">
+
+        <HeaderNav/>
         <MainContent />
+        </div>
         <div className="resume">
           <Title title="Education 📚"> </Title>
           <BoxL></BoxL>
